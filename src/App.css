@@ -36,3 +36,18 @@
     transform: rotate(360deg);
   }
 }
+
+
+.textContainer {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  background-color: white;
+  opacity: 0.8;
+  padding: 16px;
+}
+
+
+
+
+
