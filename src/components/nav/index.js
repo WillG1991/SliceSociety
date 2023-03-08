@@ -5,7 +5,13 @@ import { AppBar, Toolbar, Button } from '@material-ui/core';
 
 const useStyles = makeStyles((theme) => ({
   appBar: {
-    backgroundColor: '#1A73E9',
+    backgroundColor: '#FFFFFF',
+    color: '#1A73E9',
+    boxShadow: 'none',
+    position: 'fixed',
+    top: 0,
+    left: 0,
+    right: 0
   },
   button: {
     margin: theme.spacing(1),
@@ -28,9 +34,8 @@ function AppHeader() {
         <Button className={classes.homeButton} color="inherit">Home</Button>
         <Button className={classes.button} color="inherit">About</Button>
         <Button className={classes.button} color="inherit">Menu</Button>
-        <Button className={classes.button} color="inherit">Catering</Button>
+        <Button className={classes.button} color="inherit">Book</Button>
         <Button className={classes.button} color="inherit">Contact</Button>
-        <Button className={classes.button} color="inherit">Gallery</Button>
         <Button className={classes.button} color="inherit">Order Now</Button>
       </Toolbar>
     </AppBar>

@@ -2,11 +2,15 @@ import { makeStyles } from '@material-ui/core/styles';
 import { Box, Container, Grid, Typography } from '@material-ui/core';
 import { Assignment, Star, Inbox } from '@material-ui/icons';
 import Fade from 'react-reveal/Fade';
+import cateringImage from "../../assets/images/cateringImage.png"
 
 
 const useStyles = makeStyles((theme) => ({
   sectionBg: {
-    backgroundColor: '#f7f7f7',
+    backgroundImage: `url(${cateringImage})`,
+    backgroundSize: 'cover',
+    backgroundPosition: 'center',
+    backgroundAttachment: 'fixed',
     height: '50vh',
     display: 'flex',
     alignItems: 'center',

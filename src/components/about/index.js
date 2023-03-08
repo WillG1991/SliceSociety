@@ -72,8 +72,8 @@ function About() {
               data-aos-delay="150"
             >
               <div className={`call-us position-absolute ${classes.callUs}`}>
-                <Typography variant="h4">Book a Table</Typography>
-                <Typography variant="body1" style={{ color: '#1A73E9'}}>+1 555-555-5555</Typography>
+                <Typography variant="body1">Book a Table</Typography>
+                <Typography variant="h4" style={{ color: '#1A73E9'}}>+1 555-555-5555</Typography>
               </div>
             </div>
           </Grid>
