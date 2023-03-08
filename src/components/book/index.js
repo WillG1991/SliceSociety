@@ -4,7 +4,8 @@ import Typography from "@material-ui/core/Typography";
 import { makeStyles } from "@material-ui/core/styles";
 import TextField from "@material-ui/core/TextField";
 import Button from "@material-ui/core/Button";
-import BookingImage from "../../assets/images/Book.png"
+import Fade from 'react-reveal/Fade';
+
 
 const useStyles = makeStyles((theme) => ({
     container: {
@@ -27,6 +28,8 @@ const BookATable = () => {
 
     return (
 <section id="book-a-table" className="book-a-table" style={{ padding: "50px 100px" }}>
+<Fade bottom timeout={2000}>
+
             <div className="container">
                 <div className="section-header">
                     <Typography variant="body1" align="center">
@@ -145,10 +148,11 @@ const BookATable = () => {
                 </Grid>
             </div>
             <div className="text-center">
-                                    <Button variant="contained" color="primary" type="submit">
-                                        Book a Table
-                                    </Button>
+            <Button variant="contained"  type="submit" style={{ backgroundColor: '#1A73E9', color: "white" }}>
+  Book a Table
+</Button>
                                 </div>
+                                </Fade>
         </section>
 
     )

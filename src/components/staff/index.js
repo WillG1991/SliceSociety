@@ -7,10 +7,10 @@ import Grid from "@material-ui/core/Grid";
 import Card from "@material-ui/core/Card";
 import CardMedia from "@material-ui/core/CardMedia";
 import CardContent from "@material-ui/core/CardContent";
-import IconButton from "@material-ui/core/IconButton";
 import ChefOne from "../../assets/images/chefs/chefOne.png"
 import ChefTwo from "../../assets/images/chefs/chefTwo.png"
 import ChefThree from "../../assets/images/chefs/chefThree.png"
+import Flip from 'react-reveal/Flip';
 
 
 
@@ -90,6 +90,8 @@ const ChefsSection = () => {
   const classes = useStyles();
 return (
     <section id="chefs" className={classes.section + " section-bg"}>
+              <Flip bottom timeout={1500}>
+
     <Container>
     <div className={classes.sectionHeader}>
     <Typography variant="subtitle1">Chefs</Typography>
@@ -116,6 +118,7 @@ return (
     ))}
     </Grid>
     </Container>
+    </Flip>
     </section>
     );
     };

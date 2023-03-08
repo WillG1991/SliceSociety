@@ -21,11 +21,11 @@ const useStyles = makeStyles((theme) => ({
     textAlign: 'center',
   },
   heading: {
-    fontWeight: 'bold',
     marginBottom: theme.spacing(2),
+    color: "grey"
   },
   subheading: {
-    color: theme.palette.text.secondary,
+    color: "black",
   },
   infoItem: {
     display: 'flex',
@@ -37,11 +37,11 @@ const useStyles = makeStyles((theme) => ({
   icon: {
     marginRight: theme.spacing(2),
     fontSize: '2rem',
-    color: '#000',
+    color: '#fff',
     borderRadius: '50%',
     padding: theme.spacing(1),
-    backgroundColor: '#fff',
-    border: '2px solid #000',
+    backgroundColor: '#1A73E9',
+    border: '2px solid #1A73E9',
   },
   mapContainer: {
     height: '500px',
@@ -60,15 +60,16 @@ const Contact = () => {
 
       <Container maxWidth="lg">
         <div className={classes.sectionHeader}>
-          <Typography variant="h2" className={classes.heading}>
+          <Typography variant="body1" className={classes.heading}>
             Contact
           </Typography>
-          <Typography variant="body1" className={classes.subheading}>
-            Need Help? <span>Contact Us</span>
+          <Typography variant="h2" className={classes.subheading}>
+            Need Help? <span style={{ color: "#1A73E9" }}>Contact Us</span>
           </Typography>
         </div>
         <iframe 
-      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3031.2632712298805!2d-74.71209968418458!3d40.55786305496705!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c3eceaeac92dfd%3A0x37cf4a8baebf5f61!2sBranchburg&#39;s%20Best!5e0!3m2!1sen!2sus!4v1678048038558!5m2!1sen!2sus" 
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d109153.15938625907!2d-116.22721572801466!3d33.8173532220906!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80dca4f1d018d25f%3A0x8b355c0647f86af4!2sJoshua%20Tree%20National%20Park%2C%20California%2C%20USA!5e0!3m2!1sen!2suk!4v1646814726179!5m2!1sen!2suk
+      " 
       width="600" 
       height="450" 
       className={classes.mapContainer}

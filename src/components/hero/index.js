@@ -56,7 +56,7 @@ const useStyles = makeStyles((theme) => ({
   button: {
     marginRight: theme.spacing(2),
     color: "white",
-    backgroundColor: "black"
+    backgroundColor: "#1A73E9"
   },
 }));
 

@@ -2,9 +2,10 @@ import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import { AppBar, Toolbar, Button } from '@material-ui/core';
 
+
 const useStyles = makeStyles((theme) => ({
   appBar: {
-    backgroundColor: '#000',
+    backgroundColor: '#1A73E9',
   },
   button: {
     margin: theme.spacing(1),

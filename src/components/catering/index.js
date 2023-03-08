@@ -14,13 +14,14 @@ const useStyles = makeStyles((theme) => ({
   },
   whyBox: {
     padding: theme.spacing(4),
-    backgroundColor: '#fff',
+    backgroundColor: '#1A73E9',
     borderRadius: theme.spacing(2),
     boxShadow: theme.shadows[2],
     height: '60% !important',
     display: 'inline-block',
     flexDirection: 'column',
     justifyContent: 'space-between',
+    color: '#fff',
   },
   iconBox: {
     padding: theme.spacing(4),
@@ -41,6 +42,8 @@ const useStyles = makeStyles((theme) => ({
     alignItems: 'center',
     width: 48,
     height: 48,
+    backgroundColor: 'rgba(26, 115, 233, 0.7)',
+    color: '#fff',
   },
 }));
 

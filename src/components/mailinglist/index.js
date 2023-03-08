@@ -35,7 +35,7 @@ const useStyles = makeStyles((theme) => ({
     width: "15%",
   },
   joinMailingListButton: {
-    background: 'black',
+    background: '#1A73E9',
     color: '#fff',
     '&:hover': {
       background: '#333',

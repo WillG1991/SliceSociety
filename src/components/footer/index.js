@@ -53,7 +53,6 @@ function Footer() {
           color="default"
           size="large"
           className={classes.btn}
-          href="https://branchburgs-best.square.site/s/order"
         >
           Order Now!
         </Button>
@@ -116,7 +115,7 @@ function Footer() {
         <br></br>
         <div className={classes.footerBottom}>
           <Typography variant="body1">
-            &copy; {new Date().getFullYear()} Branchburgs Best. All Rights Reserved
+            &copy; {new Date().getFullYear()} Slice Society. All Rights Reserved
           </Typography>
 
         </div>
