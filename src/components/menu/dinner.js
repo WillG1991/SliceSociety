@@ -18,40 +18,40 @@ function DinnerMenu() {
 
   const dinnerItems = [
     {
-      name: 'Steak',
-      description: 'Grilled sirloin steak with roasted vegetables',
-      price: '$24.99',
-      image: 'https://images.unsplash.com/photo-1605279404499-849fa41f270a',
+      name: 'Margherita Pizza',
+      description: 'Classic pizza with tomato sauce, fresh mozzarella, and basil',
+      price: '$14.99',
+      image: 'http://www.italianfoodforever.com/wp-content/uploads/2008/05/pizzamargherita1.jpg',
     },
     {
-      name: 'Pasta',
-      description: 'Spaghetti with meatballs and marinara sauce',
-      price: '$15.99',
-      image: 'https://images.unsplash.com/photo-1559847844-531569f2dbb9',
-    },
-    {
-      name: 'Salmon',
-      description: 'Pan-seared salmon with lemon butter sauce',
-      price: '$19.99',
-      image: 'https://images.unsplash.com/photo-1565081179288-6ec5646f74ea',
-    },
-    {
-      name: 'Burger',
-      description: 'Classic cheeseburger with fries',
-      price: '$12.99',
-      image: 'https://images.unsplash.com/photo-1565299621875-5dfeecbcebb1',
-    },
-    {
-      name: 'Sushi',
-      description: 'Assorted sushi rolls with wasabi and soy sauce',
+      name: 'Meat Lover\'s Pizza',
+      description: 'Pizza loaded with pepperoni, sausage, bacon, and ham',
       price: '$18.99',
-      image: 'https://images.unsplash.com/photo-1519681393784-d120267933ba',
+      image: 'https://iamafoodblog.b-cdn.net/wp-content/uploads/2015/10/meatlovers-pizza-8w.jpg',
     },
     {
-      name: 'Pizza',
-      description: 'Pepperoni pizza with tomato sauce and mozzarella cheese',
+      name: 'Veggie Pizza',
+      description: 'Pizza with roasted vegetables, mushrooms, and olives',
       price: '$16.99',
-      image: 'https://images.unsplash.com/photo-1519681393784-d120267933ba',
+      image: 'https://www.dogtownpizza.com/wp-content/uploads/2021/04/vegetarian-pizza-with-addition-grilled-vegetables-and-aromatic-herbs-picture-id1127544478.jpg',
+    },
+    {
+      name: 'Hawaiian Pizza',
+      description: 'Pizza with ham, pineapple, and tomato sauce',
+      price: '$15.99',
+      image: 'https://food-images.files.bbci.co.uk/food/recipes/hawaiian_pizza_48114_16x9.jpg',
+    },
+    {
+      name: 'White Pizza',
+      description: 'Pizza with ricotta cheese, garlic, and olive oil',
+      price: '$17.99',
+      image: 'https://www.modernhoney.com/wp-content/uploads/2019/05/The-Best-3-Cheese-White-Pizza-3-500x375.jpg',
+    },
+    {
+      name: 'Pizza Calzone',
+      description: 'Folded pizza filled with cheese, tomato sauce, and your choice of toppings',
+      price: '$19.99',
+      image: 'https://cdn.tasteatlas.com/Images/Dishes/2bfdf993487d4995b8ed4ce3e99c5703.jpg',
     },
   ];
 
