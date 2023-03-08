@@ -33,22 +33,20 @@ const Menu = () => {
         Menu
       </p>
       <Typography variant="h3">
-      Menu of Delicious Slices
+      Menu of <span style={{color: '#1A73E9'}}> Delicious Slices </span>
           </Typography>
-      <ul style={{display: "flex", justifyContent: "center", listStyle: "none"}}>
-        <li style={{textDecoration: selectedItem === "breakfast" ? "underline" : "none", marginRight: "30px"}}
-            onClick={() => handleItemClick("breakfast")}>
-          Breakfast
-        </li>
-        <li style={{textDecoration: selectedItem === "lunch" ? "underline" : "none", marginRight: "30px"}}
-            onClick={() => handleItemClick("lunch")}>
-         Lunch
-        </li>
-        <li style={{textDecoration: selectedItem === "dinner" ? "underline" : "none", marginRight: "30px"}}
-            onClick={() => handleItemClick("dinner")}>
-          Dinner
-        </li>
-      </ul>
+          <ul style={{ display: "flex", justifyContent: "center", listStyle: "none" }}>
+  <li style={{ textDecoration: "underline", textDecorationColor: "grey", textDecorationThickness: "2px", marginRight: "30px", color: selectedItem === "breakfast" ? "#1A73E9" : "", paddingBottom: "2px", fontSize: "1.2rem" }} onClick={() => handleItemClick("breakfast")}>
+    Breakfast
+  </li>
+  <li style={{ textDecoration: "underline", textDecorationColor: "grey", textDecorationThickness: "2px", marginRight: "30px", color: selectedItem === "lunch" ? "#1A73E9" : "", paddingBottom: "2px", fontSize: "1.2rem" }} onClick={() => handleItemClick("lunch")}>
+    Lunch
+  </li>
+  <li style={{ textDecoration: "underline", textDecorationColor: "grey", textDecorationThickness: "2px", marginRight: "30px", color: selectedItem === "dinner" ? "#1A73E9" : "", paddingBottom: "2px", fontSize: "1.2rem" }} onClick={() => handleItemClick("dinner")}>
+    Dinner
+  </li>
+</ul>
+
       {selectedItem === "breakfast" && (
              <Grid container spacing={2} className={classes.container}>
              <Grid item xs={6}>

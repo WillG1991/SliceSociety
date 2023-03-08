@@ -56,6 +56,9 @@ function LunchMenu() {
   ];
   
   return (
+    <div>
+<Typography variant="h6" align="center" style={{ fontWeight: '300', color: '#999999' }}>Menu</Typography>
+  <Typography variant="h3" align="center" style={{ color: '#1A73E9' }}>Breakfast</Typography>
     <Grid container spacing={2}>
       {lunchItems.map((item) => (
         <Grid item xs={12} sm={6} md={4} key={item.name}>
@@ -68,7 +71,7 @@ function LunchMenu() {
               <Typography variant="body2" color="textSecondary" component="p">
                 {item.description}
               </Typography>
-              <Typography gutterBottom variant="h6" component="h3">
+              <Typography gutterBottom variant="h6" component="h3" style={{ color: "#1A73E9" }}>
                 {item.price}
               </Typography>
             </CardContent>
@@ -76,6 +79,7 @@ function LunchMenu() {
         </Grid>
       ))}
     </Grid>
+    </div>
   );
 }
 

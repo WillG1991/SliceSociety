@@ -9,6 +9,8 @@ import Menu from './components/menu';
 import MailingList from './components/mailinglist';
 import Catering from './components/catering';
 import Gallery from './components/gallery';
+import BookATable from './components/book';
+import ChefsSection from './components/staff';
 
 function App() {
   return (
@@ -19,6 +21,8 @@ function App() {
 <Menu/>
 <MailingList/>
 <Catering/>
+<BookATable/>
+<ChefsSection/>
 <Contact/>
 <Gallery/>
 <Footer/>

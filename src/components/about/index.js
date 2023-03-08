@@ -58,8 +58,9 @@ function About() {
       <div className="container" data-aos="fade-up">
         <div className="section-header">
           <Typography variant="body1">About Us</Typography>
-          <Typography variant="h3">
-          Welcome to Slice Society -  <span>Where Every Slice Tells a Story!</span>
+          <Typography variant="h4">
+          Welcome to Slice Society -  <span style={{ color: '#1A73E9' }}>Where Every Slice Tells a Story!</span>
+
           </Typography>
         </div>
         <Grid container spacing={4}>
@@ -72,7 +73,7 @@ function About() {
             >
               <div className={`call-us position-absolute ${classes.callUs}`}>
                 <Typography variant="h4">Book a Table</Typography>
-                <Typography variant="body1">+1 555-555-5555</Typography>
+                <Typography variant="body1" style={{ color: '#1A73E9'}}>+1 555-555-5555</Typography>
               </div>
             </div>
           </Grid>
@@ -89,18 +90,18 @@ function About() {
   <ul style={{ listStyle: "none", paddingLeft: "0" }}>
     <li>
       <Typography variant="body1">
-      <CheckCircleIcon color="inherit" style={{ marginRight: "8px" }} />
+      <CheckCircleIcon color="inherit" style={{ marginRight: "8px", color: '#1A73E9' }} />
       Locally sourced ingredients and fresh dough made in-house daily      </Typography>
     </li>
     <li>
       <Typography variant="body1">
-      <CheckCircleIcon color="inherit" style={{ marginRight: "8px" }} />
+      <CheckCircleIcon color="inherit" style={{ marginRight: "8px", color: '#1A73E9'  }} />
       Open kitchen design for a welcoming atmosphere
       </Typography>
     </li>
     <li>
       <Typography variant="body1">
-      <CheckCircleIcon color="inherit" style={{ marginRight: "8px" }} />
+      <CheckCircleIcon color="inherit" style={{ marginRight: "8px", color: '#1A73E9' }} />
       Community-focused events and gatherings to bring people together
       </Typography>
     </li>

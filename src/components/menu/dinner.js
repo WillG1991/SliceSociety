@@ -56,26 +56,32 @@ function DinnerMenu() {
   ];
 
   return (
-    <Grid container spacing={2}>
-      {dinnerItems.map((item) => (
-        <Grid item xs={12} sm={6} md={4} key={item.name}>
-          <Card className={classes.card}>
-            <img src={item.image} alt={item.name} style={{ objectFit: 'cover', height: 250 }} />
-            <CardContent className={classes.cardContent}>
-              <Typography gutterBottom variant="h5" component="h2">
-                {item.name}
-              </Typography>
-              <Typography variant="body2" color="textSecondary" component="p">
-                {item.description}
-              </Typography>
-              <Typography gutterBottom variant="h6" component="h3">
-                {item.price}
-              </Typography>
-            </CardContent>
-          </Card>
-        </Grid>
-      ))}
-    </Grid>
+    
+<div>
+<Typography variant="h6" align="center" style={{ fontWeight: '300', color: '#999999' }}>Menu</Typography>
+  <Typography variant="h3" align="center" style={{ color: '#1A73E9' }}>Dinner</Typography>
+
+  <Grid container spacing={2}>
+    {dinnerItems.map((item) => (
+      <Grid item xs={12} sm={6} md={4} key={item.name}>
+        <Card className={classes.card}>
+          <img src={item.image} alt={item.name} style={{ objectFit: 'cover', height: 250 }} />
+          <CardContent className={classes.cardContent}>
+            <Typography gutterBottom variant="h5" component="h2">
+              {item.name}
+            </Typography>
+            <Typography variant="body2" color="textSecondary" component="p">
+              {item.description}
+            </Typography>
+            <Typography gutterBottom variant="h6" component="h3" style={{ color: "#1A73E9" }}>
+              {item.price}
+            </Typography>
+          </CardContent>
+        </Card>
+      </Grid>
+    ))}
+  </Grid>
+</div>
   );
 }
 
