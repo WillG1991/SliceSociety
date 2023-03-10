@@ -63,7 +63,7 @@ const Contact = () => {
           <Typography variant="body1" className={classes.heading}>
             Contact
           </Typography>
-          <Typography variant="h2" className={classes.subheading}>
+          <Typography variant="h2" className={classes.subheading} style={{ fontFamily: "CustomFont"}}>
             Need Help? <span style={{ color: "#1A73E9" }}>Contact Us</span>
           </Typography>
         </div>

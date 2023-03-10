@@ -27,21 +27,21 @@ const Gallery = () => {
         newImages.push(firstImage);
         return newImages;
       });
-    }, 4000);
+    }, 3000);
     return () => clearInterval(interval);
   }, []);
 
   return (
-    <Box id="gallery" className="gallery section-bg" component="section" style={{ backgroundColor: '#f7f7f7' }}>
+<Box id="gallery" className="gallery section-bg" component="section" style={{ backgroundColor: '#f7f7f7', width: '100vw' }}>
       <Container data-aos="fade-up">
-        <Box className="section-header">
-          <Typography variant="p" gutterBottom>
-            Gallery
-          </Typography>
-          <Typography variant="h2">
-            Check <span style={{ color: "#1A73E9" }}>Our Gallery</span>
-          </Typography>
-        </Box>
+      <Box className="section-header" style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', textAlign: 'center' }}>
+  <Typography variant="p" gutterBottom style={{ color: "grey" }}> 
+    Gallery
+  </Typography>
+  <Typography variant="h2" style={{ fontFamily: "CustomFont", fontSize: "4rem"}}>
+    Check <span style={{ color: "#1A73E9" }}>Our Gallery</span>
+  </Typography>
+</Box>
         <div style={{ 
           display: 'flex', 
           flexDirection: 'row', 

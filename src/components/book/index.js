@@ -1,5 +1,6 @@
 import React from "react";
 import Grid from "@material-ui/core/Grid";
+import { Box } from "@material-ui/core";
 import Typography from "@material-ui/core/Typography";
 import { makeStyles } from "@material-ui/core/styles";
 import TextField from "@material-ui/core/TextField";
@@ -27,15 +28,15 @@ const BookATable = () => {
     const classes = useStyles();
 
     return (
-<section id="book-a-table" className="book-a-table" style={{ padding: "50px 100px" }}>
+<section id="book-a-table" className="book-a-table" style={{ padding: "50px 100px" }} >
 <Fade bottom timeout={2000}>
 
             <div className="container">
                 <div className="section-header">
-                    <Typography variant="body1" align="center">
+                    <Typography variant="body1" align="center" style={{color: "grey"}}>
                         Book A Table
                     </Typography>
-                    <Typography variant="h2" align="center">
+                    <Typography variant="h2" align="center" style={{ fontFamily: "CustomFont", fontSize: "4rem"}}>
                         Book <span style={{ color: '#1A73E9' }}>Your Stay</span>With Us
                     </Typography>
                 </div>
@@ -148,9 +149,11 @@ const BookATable = () => {
                 </Grid>
             </div>
             <div className="text-center">
-            <Button variant="contained"  type="submit" style={{ backgroundColor: '#1A73E9', color: "white" }}>
-  Book a Table
-</Button>
+            <Box className={classes.joinMailingListForm} style={{ display: 'flex', justifyContent: 'center' }}>
+  <Button variant="contained" type="submit" style={{ backgroundColor: '#1A73E9', color: "white" }}>
+    Book a Table
+  </Button>
+</Box>
                                 </div>
                                 </Fade>
         </section>

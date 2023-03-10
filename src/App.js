@@ -11,6 +11,7 @@ import Catering from './components/catering';
 import Gallery from './components/gallery';
 import BookATable from './components/book';
 import ChefsSection from './components/staff';
+import StatsCounter from './components/stats';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
 <AppHeader/>
 <Hero></Hero>
 <About/>
+<StatsCounter/>
 <Menu/>
 <MailingList/>
 <Catering/>

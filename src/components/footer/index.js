@@ -9,6 +9,9 @@ const useStyles = makeStyles((theme) => ({
     backgroundColor: 'rgba(0,0,0,0.8)',
     color: '#fff',
     padding: '60px 0',
+    display: 'flex',
+    flexDirection: 'column',
+    alignItems: 'center',
   },
   icon: {
     fontSize: '24px',
@@ -21,6 +24,9 @@ const useStyles = makeStyles((theme) => ({
     display: 'flex',
     flexDirection: 'column',
   },
+  title: {
+    textAlign: 'center',
+  },
   socialLinks: {
     display: 'flex',
     marginTop: '10px',
@@ -31,10 +37,15 @@ const useStyles = makeStyles((theme) => ({
       marginRight: '15px',
       '&:hover': {
         color: theme.palette.secondary.main,
-      }}},
+      },
+    },
+  },
   btn: {
     color: 'white',
     borderColor: 'white',
+  },
+  footerCol: {
+    textAlign: 'center',
   },
 }));
 
@@ -49,13 +60,14 @@ function Footer() {
           Order Now!
         </Typography>
         <Button
-          variant="outlined"
-          color="default"
-          size="large"
-          className={classes.btn}
-        >
-          Order Now!
-        </Button>
+        className={classes.btn}
+  variant="outlined"
+  color="default"
+  size="large"
+  style={{ display: 'block', margin: 'auto' }}
+>
+  Order Now!
+</Button>
       </Container>
       <br></br>
       <br></br>
@@ -113,12 +125,11 @@ function Footer() {
           </Grid>
         </Grid>
         <br></br>
-        <div className={classes.footerBottom}>
-          <Typography variant="body1">
-            &copy; {new Date().getFullYear()} Slice Society. All Rights Reserved
-          </Typography>
-
-        </div>
+        <div className={classes.footerBottom} style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+  <Typography variant="body1">
+    &copy; {new Date().getFullYear()} Slice Society. All Rights Reserved
+  </Typography>
+</div>
       </Container>
     </footer>
   );

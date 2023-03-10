@@ -20,6 +20,8 @@ const useStyles = makeStyles((theme) => ({
     height: 'auto',
     [theme.breakpoints.down('sm')]: {
       marginBottom: theme.spacing(4),
+      paddingTop: theme.spacing(2),
+      paddingBottom: theme.spacing(2),
     },
     [theme.breakpoints.up('md')]: {
       marginLeft: theme.spacing(4),
@@ -32,9 +34,10 @@ const useStyles = makeStyles((theme) => ({
   },
   heroTitle: {
     fontWeight: 'bold',
+    fontFamily: 'CustomFont',
     marginBottom: theme.spacing(4),
     [theme.breakpoints.up('md')]: {
-      fontSize: '4rem',
+      fontSize: '7rem',
       textAlign: 'left',
     },
   },
@@ -64,6 +67,7 @@ const Hero = () => {
   const classes = useStyles();
 
   return (
+    <Grid>
     <section id="hero" className={classes.hero}>
       <Container>
       <Fade bottom timeout={1500}>
@@ -71,9 +75,9 @@ const Hero = () => {
         <Grid container justify="space-between" alignItems="center">
           <Grid item xs={12} md={5} className={classes.heroContent}>
             <Typography variant="h2" className={classes.heroTitle} data-aos="fade-up">
-              Slice<br />Society
+              Slice Society
             </Typography>
-            <Typography variant="body1" className={classes.heroDescription} data-aos="fade-up" data-aos-delay="100">
+            <Typography variant="h5" className={classes.heroDescription} data-aos="fade-up" data-aos-delay="100">
             Join the Slice Society and discover your new pizza obsession.
             </Typography>
             <div className={classes.heroButtons} data-aos="fade-up" data-aos-delay="200">
@@ -89,6 +93,7 @@ const Hero = () => {
         </Fade>
       </Container>
     </section>
+    </Grid>
   );
 };
 

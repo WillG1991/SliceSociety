@@ -48,6 +48,33 @@
 }
 
 
+@font-face {
+  font-family: 'CustomFont';
+  src: url('../src/assets/font/melloner-fun-font/MellonerFun-d1wE.ttf');
+}
+
+@media (max-width: 959px) {
+  .call-us {
+    width: 80%;
+    left: 10%;
+    bottom: 20%;
+  }
+}
+
+@media (max-width: 959px) {
+  #stats-counter {
+ display: none !important;
+  }
+}
+
+@media (max-width: 830px) {
+  .section-bg {
+ display: none !important;
+  }
+}
 
 
 
+  
+
+  

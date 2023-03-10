@@ -28,13 +28,15 @@ const Menu = () => {
 
   return (
     <Zoom timeout={1000}>
-    <div style={{paddingTop: "64px", paddingBottom: "64px", backgroundColor: "#f4f4f4"}}>
-      <p style={{fontWeight: "bold", marginBottom: "32px", textAlign: "center", color: "#888"}}>
-        Menu
-      </p>
-      <Typography variant="h3">
-      Menu of <span style={{color: '#1A73E9'}}> Delicious Slices </span>
-          </Typography>
+    <div style={{paddingTop: "64px", paddingBottom: "64px", backgroundColor: "#f4f4f4"}} id="menu">
+    <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', textAlign: 'center' }}>
+  <Typography variant="p" gutterBottom style={{color: "grey"}}> 
+    Menu
+  </Typography>
+  <Typography variant="h3" style={{ fontFamily: "CustomFont", fontSize: "4rem"}}>
+    Menu of <span style={{color: '#1A73E9'}}> Delicious Slices </span>
+  </Typography>
+</div>
           <ul style={{ display: "flex", justifyContent: "center", listStyle: "none" }}>
   <li style={{ textDecoration: "underline", textDecorationColor: "grey", textDecorationThickness: "2px", marginRight: "30px", color: selectedItem === "breakfast" ? "#1A73E9" : "", paddingBottom: "2px", fontSize: "1.2rem" }} onClick={() => handleItemClick("breakfast")}>
     Breakfast

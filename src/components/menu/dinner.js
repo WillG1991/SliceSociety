@@ -58,7 +58,6 @@ function DinnerMenu() {
   return (
     
 <div>
-<Typography variant="h6" align="center" style={{ fontWeight: '300', color: '#999999' }}>Menu</Typography>
   <Typography variant="h3" align="center" style={{ color: '#1A73E9' }}>Dinner</Typography>
 
   <Grid container spacing={2}>

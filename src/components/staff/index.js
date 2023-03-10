@@ -94,8 +94,8 @@ return (
 
     <Container>
     <div className={classes.sectionHeader}>
-    <Typography variant="subtitle1">Chefs</Typography>
-    <Typography variant="h2" align="center">
+    <Typography variant="subtitle1" style={{color: "grey"}}>Chefs</Typography>
+    <Typography variant="h2" align="center" style={{ fontFamily: "CustomFont"}}>
   Our <span style={{ color: '#1A73E9' }}>Professional</span> Chefs
 </Typography>
     </div>

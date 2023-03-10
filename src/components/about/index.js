@@ -34,14 +34,6 @@ const useStyles = makeStyles((theme) => ({
       paddingLeft: theme.spacing(5),
     },
   },
-  playBtn: {
-    position: 'absolute',
-    top: '50%',
-    left: '50%',
-    transform: 'translate(-50%, -50%)',
-    width: '90px',
-    height: '90px',
-  },
   imgFluid: {
     maxWidth: '100%', /* add this line to make the image smaller */
   },
@@ -52,29 +44,26 @@ function About() {
   const classes = useStyles();
 
   return (
+    <Grid>
     <Slide bottom timeout={2500}>
     <Container>
     <section id="about" className={classes.about}>
       <div className="container" data-aos="fade-up">
-        <div className="section-header">
-          <Typography variant="body1">About Us</Typography>
-          <Typography variant="h4">
-          Welcome to Slice Society -  <span style={{ color: '#1A73E9' }}>Where Every Slice Tells a Story!</span>
-
-          </Typography>
-        </div>
+      <div className="section-header" style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', textAlign: 'center' }}>
+  <Typography variant="body1" style={{ color: "grey" }}>About Us</Typography>
+  <Typography variant="h3" style={{ fontFamily: "CustomFont", fontSize: "4rem"}}>
+    Welcome to Slice Society -  <span style={{ color: '#1A73E9'}}>Where Every Slice Tells a Story!</span>
+  </Typography>
+</div>
         <Grid container spacing={4}>
-          <Grid item lg={7}>
+          <Grid item lg={7} sm={12}>
             <div
               className={`position-relative about-img ${classes.aboutImg}`}
               style={{ backgroundImage: `url(${AboutOne})` }}
               data-aos="fade-up"
               data-aos-delay="150"
             >
-              <div className={`call-us position-absolute ${classes.callUs}`}>
-                <Typography variant="body1">Book a Table</Typography>
-                <Typography variant="h4" style={{ color: '#1A73E9'}}>+1 555-555-5555</Typography>
-              </div>
+        
             </div>
           </Grid>
 
@@ -119,6 +108,7 @@ function About() {
     </section>
   </Container>
   </Slide>
+  </Grid>
 );
 }
 
