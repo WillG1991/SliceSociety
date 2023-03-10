@@ -1,0 +1,33 @@
+{
+  "files": {
+    "main.css": "/SliceSociety/static/css/main.f4a0a39d.css",
+    "main.js": "/SliceSociety/static/js/main.f2c60a0e.js",
+    "static/js/787.f53881cb.chunk.js": "/SliceSociety/static/js/787.f53881cb.chunk.js",
+    "static/media/aboutOne.png": "/SliceSociety/static/media/aboutOne.10d79e2798cd6d8dfa04.png",
+    "static/media/galleryOne.png": "/SliceSociety/static/media/galleryOne.c24d300648a0c11054ab.png",
+    "static/media/cateringImage.png": "/SliceSociety/static/media/cateringImage.dba75a7391b291a5652b.png",
+    "static/media/chefTwo.png": "/SliceSociety/static/media/chefTwo.e595290fb74694857945.png",
+    "static/media/galleryFive.png": "/SliceSociety/static/media/galleryFive.267f46a96205ea242f7d.png",
+    "static/media/galleryTwo.png": "/SliceSociety/static/media/galleryTwo.63a6453862771f9cd1b1.png",
+    "static/media/galleryFour.png": "/SliceSociety/static/media/galleryFour.9f04d66b618ad743f522.png",
+    "static/media/chefThree.png": "/SliceSociety/static/media/chefThree.fc7842bd1cfe917f9aac.png",
+    "static/media/statsBack.png": "/SliceSociety/static/media/statsBack.3b4d1946267390e9c516.png",
+    "static/media/gallerySeven.png": "/SliceSociety/static/media/gallerySeven.c7162c9453e44d02356d.png",
+    "static/media/Book.png": "/SliceSociety/static/media/Book.87708385e1b1669cd3be.png",
+    "static/media/chefOne.png": "/SliceSociety/static/media/chefOne.d7506b4345373b3961d4.png",
+    "static/media/gallerySix.png": "/SliceSociety/static/media/gallerySix.665a63d27b0537cfa65b.png",
+    "static/media/aboutTwo.png": "/SliceSociety/static/media/aboutTwo.6751bcdeac51cd154fb7.png",
+    "static/media/galleryThree.png": "/SliceSociety/static/media/galleryThree.c1cb7b10fa170160af2a.png",
+    "static/media/heroImage.png": "/SliceSociety/static/media/heroImage.91823ad3da801df64cc1.png",
+    "static/media/MellonerFun-d1wE.ttf": "/SliceSociety/static/media/MellonerFun-d1wE.daac6a8d9108d9174c22.ttf",
+    "static/media/logo.svg": "/SliceSociety/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/SliceSociety/index.html",
+    "main.f4a0a39d.css.map": "/SliceSociety/static/css/main.f4a0a39d.css.map",
+    "main.f2c60a0e.js.map": "/SliceSociety/static/js/main.f2c60a0e.js.map",
+    "787.f53881cb.chunk.js.map": "/SliceSociety/static/js/787.f53881cb.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f4a0a39d.css",
+    "static/js/main.f2c60a0e.js"
+  ]
+}
