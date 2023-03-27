@@ -31,7 +31,7 @@ const useStyles = makeStyles((theme) => ({
   content: {
     paddingLeft: theme.spacing(0),
     [theme.breakpoints.up('md')]: {
-      paddingLeft: theme.spacing(5),
+      paddingLeft: theme.spacing(4),
     },
   },
   imgFluid: {

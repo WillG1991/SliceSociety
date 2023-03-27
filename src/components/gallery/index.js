@@ -32,17 +32,19 @@ const Gallery = () => {
   }, []);
 
   return (
-<Box id="gallery" className="gallery section-bg" component="section" style={{ backgroundColor: '#f7f7f7', width: '100vw' }}>
+    <Box id="gallery" className="gallery section-bg" component="section" style={{ backgroundColor: '#f7f7f7', width: '100vw' }}>
       <Container data-aos="fade-up">
-      <Box className="section-header" style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', textAlign: 'center' }}>
-  <Typography variant="p" gutterBottom style={{ color: "grey" }}> 
-    Gallery
-  </Typography>
-  <Typography variant="h2" style={{ fontFamily: "CustomFont", fontSize: "4rem"}}>
-    Check <span style={{ color: "#1A73E9" }}>Our Gallery</span>
-  </Typography>
-</Box>
-        <div style={{ 
+        <Box className="section-header" style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', textAlign: 'center' }}>
+          <Typography variant="p" gutterBottom style={{ color: "grey" }}> 
+            Gallery
+          </Typography>
+          <Typography variant="h2" style={{ fontFamily: "CustomFont", fontSize: "4rem"}}>
+            Check <span style={{ color: "#1A73E9" }}>Our Gallery</span>
+          </Typography>
+        </Box>
+        <div 
+        className="galleryImages"
+        style={{ 
           display: 'flex', 
           flexDirection: 'row', 
           alignItems: 'center', 
@@ -53,13 +55,13 @@ const Gallery = () => {
             <img 
               key={index} 
               src={image} 
-              alt={`Image ${index}`} 
+              alt={`Fresh Baked Pizza ${index}`} 
               style={{ 
-                width: index === 3 ? '300px' : '300px', 
-                height: index === 3 ? '400px' : '300px', 
+                width: '150px',
+                height: index === 3 ? '300px' : index % 2 === 0 ? '200px' : '200px',
                 objectFit: 'cover', 
-                marginRight: '20px' 
-              }} 
+                marginRight: '20px',
+              }}
             />
           ))}
         </div>

@@ -20,8 +20,9 @@ const useStyles = makeStyles((theme) => ({
     },
     form: {
         backgroundColor: theme.palette.background.paper,
-        padding: theme.spacing(4),
+        padding: theme.spacing(3),
     },
+ 
 }));
 
 const BookATable = () => {
@@ -41,8 +42,8 @@ const BookATable = () => {
                     </Typography>
                 </div>
 
-                <Grid container spacing={2}>
-                    <Grid item xs={12} md={4}>
+                <Grid container spacing={0} >
+                    <Grid item xs={12} md={4} className="bookImage">
                     <div
   className={classes.reservationImg}
   style={{
@@ -56,7 +57,6 @@ const BookATable = () => {
                             <form
                                 action="forms/book-a-table.php"
                                 method="post"
-                                role="form"
                                 className="php-email-form"
                             >
                                 <Grid container spacing={2}>
@@ -69,6 +69,7 @@ const BookATable = () => {
                                             fullWidth
                                             required
                                             inputProps={{ minLength: 4 }}
+                                            style={{ margin: "5px 0" }}
                                         />
                                     </Grid>
 
@@ -81,6 +82,8 @@ const BookATable = () => {
                                             fullWidth
                                             required
                                             inputProps={{ pattern: "[a-z0-9._%+-]+@[a-z0-9.-]+.[a-z]{2,}$" }}
+                                            style={{ margin: "5px 0" }}
+
                                         />
                                     </Grid>
 
@@ -93,6 +96,8 @@ const BookATable = () => {
                                             fullWidth
                                             required
                                             inputProps={{ minLength: 4 }}
+                                            style={{ margin: "5px 0" }}
+
                                         />
                                     </Grid>
 
@@ -105,6 +110,7 @@ const BookATable = () => {
                                             fullWidth
                                             required
                                             inputProps={{ minLength: 4 }}
+                                            style={{ margin: "5px 0" }}
                                         />
                                     </Grid>
 
@@ -117,6 +123,7 @@ const BookATable = () => {
                                             fullWidth
                                             required
                                             inputProps={{ minLength: 4 }}
+                                            style={{ margin: "5px 0" }}
                                         />
                                     </Grid>
 
@@ -129,6 +136,7 @@ const BookATable = () => {
                                             fullWidth
                                             required
                                             inputProps={{ minLength: 1 }}
+                                            style={{ margin: "5px 0" }}
                                         />
                                     </Grid>
 
@@ -140,6 +148,7 @@ const BookATable = () => {
                                             multiline
                                             rows={5}
                                             required
+                                            style={{ margin: "5px 0" }}
                                         />
                                     </Grid>
                                 </Grid>

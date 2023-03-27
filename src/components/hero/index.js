@@ -19,12 +19,12 @@ const useStyles = makeStyles((theme) => ({
     maxWidth: '100%',
     height: 'auto',
     [theme.breakpoints.down('sm')]: {
-      marginBottom: theme.spacing(4),
+      marginBottom: theme.spacing(4,0),
       paddingTop: theme.spacing(2),
       paddingBottom: theme.spacing(2),
     },
     [theme.breakpoints.up('md')]: {
-      marginLeft: theme.spacing(4),
+      
     },
   },
   heroContent: {

@@ -3,8 +3,7 @@ import { Grid, Typography } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/styles";
 import CountUp from "react-countup";
 import statsBackImage from "../../assets/images/statsBack.png";
-import { useInView } from "react-intersection-observer";
-import Slide from 'react-reveal/Slide';
+
 
 
 const useStyles = makeStyles((theme) => ({
@@ -13,8 +12,7 @@ const useStyles = makeStyles((theme) => ({
     display: "flex",
     flexDirection: "column",
     alignItems: "center",
-    justifyContent: "center",
-    padding: "6rem",
+    justifyContent: "center", 
     "& span": {
       fontSize: "3rem",
       color: "#fff",
@@ -44,13 +42,9 @@ const useStyles = makeStyles((theme) => ({
 function StatsCounter() {
   const classes = useStyles();
   const [countUpStarted, setCountUpStarted] = useState(false);
-  const { ref, inView } = useInView({ threshold: 2 });
 
-  const handleCountUp = () => {
-    if (inView) {
-      setCountUpStarted(true);
-    }
-  };
+
+
 
   return (
     <section
